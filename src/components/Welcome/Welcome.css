@@ -1,0 +1,37 @@
+.welcomeComponent {
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.welcomeName {
+    font-size: 3rem;
+    margin: 0vh 0vw 0vh 2vw
+}
+
+.welcomeName > h1 {
+    margin: 0
+}
+
+.welcomeBio {
+    margin-top: 5vh
+}
+
+.welcomeBio > h2 {
+    margin: 0
+}
+
+.welcomeSkills {
+    margin-top: 5vh
+}
+
+.welcomeSkills > h4 {
+    margin: 0
+}
+
+.welcomeContact {
+    margin-top: 5vh
+}
+.welcomeContact > button {
+    margin: 0vh 2vw 5vh 0vw;
+    padding: .5em 1em .5em 1em
+}

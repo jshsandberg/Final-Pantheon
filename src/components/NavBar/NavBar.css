@@ -1,0 +1,19 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.navBarComponents {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    margin-right: 5vw;
+}
+
+.logo {
+    width: 5vw;
+    margin-left: 1vw;
+}
