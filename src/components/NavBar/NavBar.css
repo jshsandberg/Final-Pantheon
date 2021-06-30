@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1vh;
+    border-bottom: solid 1px rgb(71, 71, 71);
 }
 
 .navBarComponents {
@@ -11,6 +11,7 @@
     flex-direction: row;
     gap: 4vw;
     margin-right: 5vw;
+    color: white;
 }
 
 .logo {

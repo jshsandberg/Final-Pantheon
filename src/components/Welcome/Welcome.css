@@ -1,19 +1,57 @@
-.welcomeComponent {
+/* .welcomeComponent {
     margin-left: 10vw;
     margin-top: 10vh;
+} */
+
+/* .welcomeImageHolder {
+    background-image: url(../../utils/heyThereImage.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: -6em;
+    background-position-y: -5em;
+} */
+
+.heyThere {
+    color: rgb(91, 223, 91);
 }
+
+.heyThere > h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.welcomeImageHolder {
+    position: relative;
+}
+
+/* .heyThereImage {
+    position: absolute;
+    z-index: 0;
+    top: -100px;
+    width: 20%
+} */
 
 .welcomeName {
     font-size: 3rem;
-    margin: 0vh 0vw 0vh 2vw
+    margin: 0vh 0vw 0vh 2vw;
+    color: white;
 }
 
 .welcomeName > h1 {
-    margin: 0
+    margin: 0;
+    height: 90%
+
+}
+
+.softwareEngineer {
+    color: white
 }
 
 .welcomeBio {
-    margin-top: 5vh
+    margin-top: 5vh;
+    color: rgb(124, 124, 124);
+    width: 45%;
+    font-size: 1.1em;
 }
 
 .welcomeBio > h2 {
@@ -21,7 +59,8 @@
 }
 
 .welcomeSkills {
-    margin-top: 5vh
+    margin-top: 5vh;
+    color: white
 }
 
 .welcomeSkills > h4 {
@@ -33,5 +72,15 @@
 }
 .welcomeContact > button {
     margin: 0vh 2vw 5vh 0vw;
-    padding: .5em 1em .5em 1em
+    padding: .5em 1em .5em 1em;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    border-radius: 5px;
+    border: none;
+    transition: background-color .3s ease;
+    
+}
+
+.welcomeContact > button:hover {
+    background-color:rgb(77, 77, 77)
 }

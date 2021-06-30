@@ -14,8 +14,7 @@ export default function Welcome() {
                 </div>
             </div>
             <div className="welcomeBio">
-                <h2>Software Engineer.</h2>
-                <h2>Studied at University of California Irvine with a passion of creating applications.</h2>
+                <h2><span className="softwareEngineer">Software Engineer.</span> Studied at University of California Irvine with a passion of creating applications.</h2>
             </div>
             <div className="welcomeSkills">
                 <h4>Learning and exploring new opportunities and side projects</h4>

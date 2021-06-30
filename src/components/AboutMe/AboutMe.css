@@ -1,0 +1,38 @@
+.aboutMeHolder {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* width: 75%; */
+}
+
+.aboutMeTextHolder {
+    width: 70%; 
+}
+
+.aboutMeTitle {
+    color: white;
+}
+
+.aboutMeText {
+    width: 100%;
+}
+
+.aboutMeText > h4 {
+    color: white;
+    color: rgb(124, 124, 124);
+}
+
+.aboutMeText > h4 > span {
+    color: rgb(91, 223, 91)
+}
+
+.aboutMeImage > img {
+    width: 45%;
+    height: auto
+}
+
+.aboutMeImage {
+    margin-left: 5vw;
+    /* display: flex;
+    justify-content: center; */
+}
