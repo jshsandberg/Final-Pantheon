@@ -1,9 +1,9 @@
 .projectCard {
-    width: 45vw;
+    width: 40vw;
 }
 
 .projectImage {
-    width: 45vw;
+    width: 40vw;
     border-radius: 12px 12px 0% 0%;
 }
 
@@ -15,14 +15,29 @@
   position: relative;
 }
 
+.projectImageHolder {
+    height: auto
+}
+
 .githubIconImage {
     position: absolute;
-    left: -3vw;
+    left: -5.5vw;
     width: 2vw;
     top: -1.5vh;
 }
 
+.linkIconImage {
+    position: absolute;
+    left: -3vw;
+    width: 2vw;
+    top: -1.6vh;
+}
+
 .githubIconImage:hover {
+    cursor: pointer;
+}
+
+.linkIconImage:hover {
     cursor: pointer;
 }
 

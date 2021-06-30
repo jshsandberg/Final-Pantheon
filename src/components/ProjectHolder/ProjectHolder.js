@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import GithubIconInactive from "../../utils/iconInactive.png";
 import GithubIconActive from "../../utils/iconActive.png";
+import LinkIconInactive from "../../utils/test1.png";
+import LinkIconActive from "../../utils/test.png"
 import "./ProjectHolder.css";
 
 export default function ProjectHolder({img, name, techs, text}) {
 
     const [githubActive, setGithubActive] = useState(false);
+    const [linkActive, setLinkActive] = useState(false);
+
 
 
 
     return (
         <div className="projectCard">
             <div className="projectImageHolder">
-                <img className="projectImage" src={img} alt="projectImage" /> circle size 76 icon size 95
+                <img className="projectImage" src={img} alt="projectImage" />
             </div>
             <div className="projectCardTitle">
                 <div className="projectCardTitleHolder">
@@ -21,7 +25,8 @@ export default function ProjectHolder({img, name, techs, text}) {
                     </div>
                     <div className="projectCardTitleLinks">
                         <img onMouseEnter={() => setGithubActive(true)} onMouseLeave={() => setGithubActive(false)} className="githubIconImage" src={githubActive ? GithubIconActive : GithubIconInactive} alt="githubIcon" />
-                        <button>Link</button>
+                        <img onMouseEnter={() => setLinkActive(true)} onMouseLeave={() => setLinkActive(false)} className="linkIconImage" src={linkActive ? LinkIconActive : LinkIconInactive} alt="linkIcon" />
+ 
                     </div>
                 </div>
                 <div className="projectCardTitleTechsHolder">

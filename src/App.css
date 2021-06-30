@@ -14,13 +14,22 @@
   opacity: 0;
 } */
 
-.creativeWorkHolder > h2 {
-  color: white;
-  margin: .5em
+.creativeWorkHolder1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.creativeWorkHolder > h4 {
+
+.creativeWorkHolder1 > div >h2 {
+  color: white;
+  margin: .5rem;
+  font-size: 2em;
+}
+
+.creativeWorkHolder1 > div > h4 {
   color: rgb(124, 124, 124);
-  margin: .5em
+  margin: .5rem;
+  font-size: 1em;
 
 }
