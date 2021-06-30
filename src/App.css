@@ -13,3 +13,14 @@
 /* .fade-in-section.is-not-visible {
   opacity: 0;
 } */
+
+.creativeWorkHolder > h2 {
+  color: white;
+  margin: .5em
+}
+
+.creativeWorkHolder > h4 {
+  color: rgb(124, 124, 124);
+  margin: .5em
+
+}

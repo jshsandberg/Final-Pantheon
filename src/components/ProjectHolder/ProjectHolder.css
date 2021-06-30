@@ -1,0 +1,92 @@
+.projectCard {
+    width: 45vw;
+}
+
+.projectImage {
+    width: 45vw;
+    border-radius: 12px 12px 0% 0%;
+}
+
+.projectCardTitle {
+    background-color:rgb(17, 17, 17);
+}
+
+.projectCardTitleLinks {
+  position: relative;
+}
+
+.githubIconImage {
+    position: absolute;
+    left: -3vw;
+    width: 2vw;
+    top: -1.5vh;
+}
+
+.githubIconImage:hover {
+    cursor: pointer;
+}
+
+.projectCardTitleHolder {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.projectCardTitleTechsHolder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: .5em;
+    padding-left: 2em;
+    padding-top: .8em
+}
+
+.javascriptHolder {
+    color: rgb(211, 201, 201);
+    background-color: rgba(206, 65, 65, 1);
+    border-radius: 7px;
+}
+
+.mongoDBHolder {
+    color: rgb(201, 202, 211);
+    background-color: rgb(65, 67, 206);
+    border-radius: 7px;
+}
+
+.reactHolder {
+    color: rgb(201, 202, 211);
+    background-color: rgb(158, 147, 47);
+    border-radius: 7px;
+}
+
+.nodeJSHolder {
+    color: rgb(201, 202, 211);
+    background-color: rgb(97, 15, 79);
+    border-radius: 7px;
+}
+
+
+.projectCardTitleName > h1 {
+    color: white;
+    padding: .2em 0em 0em 1em;
+    margin: 0em
+} 
+
+.projectCardTitleTechsHolder > div > h4 {
+    padding: .2em .8em;
+    margin: 0em
+}
+
+.projectCardText {
+    background-color: rgb(17, 17, 17);
+    border-top: solid 1px rgb(78, 78, 78);
+    border-radius: 0px 0px 12px 12px;
+}
+
+.projectCardText > h4 {
+    color: rgb(124, 124, 124);
+    padding: 1em;
+    margin: 0
+}
+
