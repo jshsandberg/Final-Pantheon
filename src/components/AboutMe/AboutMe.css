@@ -6,7 +6,7 @@
 }
 
 .aboutMeTextHolder {
-    width: 70%; 
+    width: 50%; 
 }
 
 .aboutMeTitle {
@@ -27,12 +27,18 @@
 }
 
 .aboutMeImage > img {
-    width: 45%;
-    height: auto
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutMeImage {
     margin-left: 5vw;
+    width: 50%
     /* display: flex;
     justify-content: center; */
 }

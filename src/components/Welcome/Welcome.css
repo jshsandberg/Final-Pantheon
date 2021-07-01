@@ -68,17 +68,23 @@
 }
 
 .welcomeContact {
-    margin-top: 5vh
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
 }
 .welcomeContact > button {
     margin: 0vh 2vw 5vh 0vw;
-    padding: .5em 1em .5em 1em;
+    padding: .3em .8em .3em .8em;
     color: white;
     background-color: rgb(37, 37, 37);
     border-radius: 5px;
     border: none;
     transition: background-color .3s ease;
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: 1em; 
 }
 
 .welcomeContact > button:hover {

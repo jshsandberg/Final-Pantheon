@@ -5,13 +5,10 @@ import LinkIconInactive from "../../utils/test1.png";
 import LinkIconActive from "../../utils/test.png"
 import "./ProjectHolder.css";
 
-export default function ProjectHolder({img, name, techs, text}) {
+export default function ProjectHolder({github, link, img, name, techs, text}) {
 
     const [githubActive, setGithubActive] = useState(false);
     const [linkActive, setLinkActive] = useState(false);
-
-
-
 
     return (
         <div className="projectCard">
@@ -24,15 +21,14 @@ export default function ProjectHolder({img, name, techs, text}) {
                         <h1>{name}</h1>
                     </div>
                     <div className="projectCardTitleLinks">
-                        <img onMouseEnter={() => setGithubActive(true)} onMouseLeave={() => setGithubActive(false)} className="githubIconImage" src={githubActive ? GithubIconActive : GithubIconInactive} alt="githubIcon" />
-                        <img onMouseEnter={() => setLinkActive(true)} onMouseLeave={() => setLinkActive(false)} className="linkIconImage" src={linkActive ? LinkIconActive : LinkIconInactive} alt="linkIcon" />
- 
+                        <a target="_blank" href={github}><img onMouseEnter={() => setGithubActive(true)} onMouseLeave={() => setGithubActive(false)} className="githubIconImage" src={githubActive ? GithubIconActive : GithubIconInactive} alt="githubIcon" /></a>
+                        <a target="_blank" href={link}><img onMouseEnter={() => setLinkActive(true)} onMouseLeave={() => setLinkActive(false)} className="linkIconImage" src={linkActive ? LinkIconActive : LinkIconInactive} alt="linkIcon" /></a>
                     </div>
                 </div>
                 <div className="projectCardTitleTechsHolder">
                     {techs.map((item, i) => {
                         return (
-                            <div className={item === "Javascript" ? "javascriptHolder" : item === "MongoDB" ? "mongoDBHolder" : item === "React" ? "reactHolder" : item === "NodeJS" ? "nodeJSHolder" : null } key={i}>
+                            <div className={item === "Javascript" ? "javascriptHolder" : item === "MongoDB" ? "mongoDBHolder" : item === "React" ? "reactHolder" : item === "NodeJS" ? "nodeJSHolder" : item === "MySQL" ? "mySQLHolder" : null  } key={i}>
                                 <h4>{item}</h4>
                             </div>
                         )

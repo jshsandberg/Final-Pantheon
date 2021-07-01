@@ -3,16 +3,20 @@ import NavBar from "./components/NavBar/NavBar";
 import Welcome from "./components/Welcome/Welcome";
 import AboutMe from "./components/AboutMe/AboutMe";
 import ProjectHolder from "./components/ProjectHolder/ProjectHolder";
+import KeepInTouch from "./components/KeepInTouch/KeepInTouch";
+import RightArrow from "./utils/rightArrow.png";
 import Inventory from "./utils/Welcome.png";
+import RoadMap from "./utils/roadmap.png";
+import Pokedex from "./utils/Pokedex4.png";
+import Recipe from "./utils/Recipe1.png";
+import Pantheon from "./utils/pantheon.png";
 import "./App.css";
 
 function useOnScreen(ref, rootMargin = "0px") {
-  // State and setter for storing whether element is visible
   const [isIntersecting, setIntersecting] = useState(false);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Update our state when observer callback fires
         setIntersecting(entry.isIntersecting);
       },
       {
@@ -25,7 +29,7 @@ function useOnScreen(ref, rootMargin = "0px") {
     return () => {
       observer.unobserve(ref.current);
     };
-  }, [ref, rootMargin]); // Empty array ensures that effect is only run on mount and unmount
+  }, [ref, rootMargin]);
   return isIntersecting;
 }
 
@@ -33,20 +37,46 @@ function App() {
 
   const bioRef = useRef();
 
-  const onScreenBio = useOnScreen(bioRef, "-300px");
+  const onScreenBio = useOnScreen(bioRef, "-200px");
 
   const creativeWorkRef = useRef();
 
-  const onScreenCreativeWork = useOnScreen(creativeWorkRef, "-300px")
+  const onScreenCreativeWork = useOnScreen(creativeWorkRef, "-200px")
 
-  console.log(onScreenCreativeWork)
+  const roadRef = useRef();
 
+  const onScreenRoad = useOnScreen(roadRef, "-200px");
+
+  const pokemonRef = useRef();
+
+  const onScreenPokemon = useOnScreen(pokemonRef, "-200px");
+
+  const recipeRef = useRef();
+
+  const onScreenRecipe = useOnScreen(recipeRef, "-200px");
+
+  const keepRef = useRef();
+
+  const onScreenKeep = useOnScreen(keepRef, "-200px");
+
+  const pantheonRef = useRef();
+
+  const onScreenPantheon = useOnScreen(pantheonRef, "-200px");
+
+  const shelfKeeperText = "Shelf Keeper is a MERN Stack application that allows the user to record their inventory and alter the data. Working with three gifted individuals, I was in charge of the functionality of the website, the back-end, and incorporating third party packages in our code, such as JSON WebToken and Passport "
+
+  const pantheonText = "Pantheon is currently my passion project as of now. Been working on this since March and have gone through multiple iterations of what I want the application to do and how it shoud feel. Pantheon is an application that allows user's to challenge friends on what is the best song for said definition. Using the Spotify API, user's can create competitions and invite their friends to compete to see which song they think best respresents the category of the competition. It is currently functional and available to anyone; however, I am still working on quality of life changes and the UI. Future plans include, emailing the user when an action is ready for them to take, keeping track of wins and losses, and much more."
+ 
+  const pokedexText = "The Galar Pokedex was my first project I completed by myself. This project was a way for me to explore more of the realm of React and hone in on my skills while still doing something that I enjoyed and felt passionate about. The Galar Pokedex use's the PokeAPI to gather data for each pokemon. The user can click on any pokemon and the API will gather data for that certain pokemon and display it in a clean, slick manor."
+
+  const recipeText = "";
+  
   return (
     <div style={{backgroundColor: "black"}}>
-      <div>
+      {/* <div>
         <NavBar />
-      </div>
-      <div style={{marginLeft: "10vw", marginTop: "15vh"}}>
+      </div> */}
+      <div style={{marginLeft: "10vw", paddingTop: "10vh"}}>
         <div>
           <Welcome />
         </div>
@@ -54,17 +84,39 @@ function App() {
             <AboutMe />
           </div>
       </div>
-      <div className={`creativeWorkHolder1 fade-in-section ${onScreenCreativeWork ? 'is-visible' : 'is-not-visible'}`} ref={creativeWorkRef}>
-        <div>
-          <h2>All Creative Work.</h2>
-          <h4>Here's some of my projects that I have worked on.</h4>
-          <h4 style={{color: "rgb(91, 223, 91)"}}>Explore more</h4>
+      <div style={{marginTop: "20vh", display: "flex", flexDirection: "row", justifyContent: "center", gap: "5vw"}}>
+        <div className="creativeWorkHolder1">
+          <div className={`fade-in-section ${onScreenCreativeWork ? 'is-visible' : 'is-not-visible'}`} ref={creativeWorkRef}>
+            <h2>All Creative Work.</h2>
+            <h4>Here's some of my projects that I have worked on.</h4>
+            <h4 style={{color: "rgb(91, 223, 91)", fontSize: "1.5em", display: 'flex', flexDirection: "row", alignItems: "center"}}>Explore more<img style={{width: "40px", marginTop: "8px", marginLeft: '10px'}} src={RightArrow} alt="rightArrow" /></h4>
+          </div>
+          <div className={`fade-in-section ${onScreenPantheon ? 'is-visible' : 'is-not-visible'}`} ref={pantheonRef} style={{display: "flex", justifyContent: "center"}}>
+            <ProjectHolder github={"https://github.com/jshsandberg/Pantheon"} link={"https://pantheon-jjshsandberg.herokuapp.com/"} img={Pantheon} name={"Pantheon"} techs={["Javascript", "React", "MongoDB", "NodeJS"]} text={pantheonText} />
+          </div>
+          <div className={`fade-in-section ${onScreenRecipe ? 'is-visible' : 'is-not-visible'}`} ref={recipeRef} style={{display: "flex", justifyContent: "center"}}>
+            <ProjectHolder github={"https://github.com/jshsandberg/Recipe"} link={"https://spencer-alan.github.io/project-1/"} img={Recipe} name={"RoadTrip Planner"} techs={["Javascript"]} text={pokedexText} />
+          </div>
         </div>
-        <div style={{display: "flex", justifyContent: "center"}}>
-          <ProjectHolder img={Inventory} name={"Inventory"} techs={["Javascript", "MongoDB", "React", "NodeJS"]} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lorem lacus. Curabitur nec ex varius, tempus tellus vitae, feugiat sapien. Mauris et blandit ex. Fusce rutrum elit in tellus eleifend, nec bibendum magna cursus. Nullam convallis metus dignissim, fringilla felis placerat, dictum turpis. Vestibulum ante ipsum. Integer ornare ipsum non ex congue faucibus."} />
-        </div>
+          <div className="creativeWorkHolder1">
+            <div className={`fade-in-section ${onScreenCreativeWork ? 'is-visible' : 'is-not-visible'}`} ref={creativeWorkRef} style={{display: "flex", justifyContent: "center"}}>
+              <ProjectHolder github={"https://github.com/jshsandberg/Inventory"} link={"https://shelf-keeper-jshsandberg.herokuapp.com/"} img={Inventory} name={"Shelf Keeper"} techs={["Javascript", "MongoDB", "React", "NodeJS"]} text={shelfKeeperText} />
+            </div>
+            <div className={`fade-in-section ${onScreenPokemon ? 'is-visible' : 'is-not-visible'}`} ref={pokemonRef} style={{display: "flex", justifyContent: "center"}}>
+              <ProjectHolder github={"https://github.com/jshsandberg/pokedex-v2"} link={"https://jshsandberg.github.io/pokedex-v2/"} img={Pokedex} name={"Galar Pokedex"} techs={["Javascript", "React"]} text={pokedexText} />
+            </div>
+            <div className={`fade-in-section ${onScreenRoad ? 'is-visible' : 'is-not-visible'}`} ref={roadRef} style={{display: "flex", justifyContent: "center"}}>
+              <ProjectHolder github={"https://github.com/jshsandberg/RoadTrip-Planner"} link={"https://roadtrip-planner-app.herokuapp.com/"} img={RoadMap} name={"RoadTrip Planner"} techs={["Javascript", "MySQL", "NodeJS"]} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lorem lacus. Curabitur nec ex varius, tempus tellus vitae, feugiat sapien. Mauris et blandit ex. Fusce rutrum elit in tellus eleifend, nec bibendum magna cursus. Nullam convallis metus dignissim, fringilla felis placerat, dictum turpis. Vestibulum ante ipsum. Integer ornare ipsum non ex congue faucibus."} />
+            </div>
+          </div>
       </div>
-     
+      <div className={`fade-in-section ${onScreenKeep ? 'is-visible' : 'is-not-visible'}`} ref={keepRef} style={{display: "flex", justifyContent: "center", marginTop: "35vh"}}>
+        <KeepInTouch />
+      </div>
+      <div style={{display: "flex", flexDirection: "column", alignItems: "center", marginTop: "20vh", paddingBottom: "10vh"}}>
+        <h3 style={{color: "white", margin: "0"}}>Designed and Developed by Josh Sandberg</h3>
+        <h3 style={{color: "white", margin: "0"}}>Built with <span style={{color: "rgb(91, 223, 91"}}>React</span>. Hosted on <span style={{color: "rgb(91, 223, 91"}}>Heroku</span></h3>
+      </div>
     </div>
   );
 }

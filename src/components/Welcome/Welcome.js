@@ -1,4 +1,7 @@
 import React from "react";
+import GithubIconActive from "../../utils/iconActive.png";
+import LinkedIn from "../../utils/linkedin.png";
+import Email from "../../utils/email.png";
 import "./Welcome.css"
 
 export default function Welcome() {
@@ -21,9 +24,9 @@ export default function Welcome() {
                 <h4>Currently looking for employment in Web Developement / Software Engineering</h4>
             </div>
             <div className="welcomeContact">
-                <button>Github</button>
-                <button>LinkedIn</button>
-                <button>Email</button>
+                <button><img style={{width: "2em"}} src={GithubIconActive} alt="githubIcon" /><span style={{marginTop: "2px"}}><a style={{textDecoration: "none", color: "white"}} href="https://github.com/jshsandberg" target="_blank">Github</a></span></button>
+                <button><img style={{width: "1.5em"}} src={LinkedIn} alt="linkedinIcon" /><span style={{marginTop: "2px"}}><a style={{textDecoration: "none", color: "white"}} href="https://linkedin.com/in/jshsandberg" target="_blank">LinkedIn</a></span></button>
+                <button><img style={{width: "1.5em"}} src={Email} alt="emailIcon" /><span style={{marginTop: "2px"}}><a style={{textDecoration: "none", color: "white"}} href="mailto:jshsandberg@gmail.com" target="_blank">Email</a></span></button>
             </div>
         </div>
     )
