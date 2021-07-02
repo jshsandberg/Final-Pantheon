@@ -69,8 +69,10 @@ function App() {
  
   const pokedexText = "The Galar Pokedex was my first project I completed by myself. This project was a way for me to explore more of the realm of React and hone in on my skills while still doing something that I enjoyed and felt passionate about. The Galar Pokedex use's the PokeAPI to gather data for each pokemon. The user can click on any pokemon and the API will gather data for that certain pokemon and display it in a clean, slick manor."
 
-  const recipeText = "";
-  
+  const recipeText = "The first application I ever created, this application allows the user to look up any dish and using a Food API, gather as much information as possible for that paticular dish. User's can also look up drinks using the BartendingAPI we have incorporated in our application. My focus was the functionality of the website and the API.";
+ 
+  const roadText = "An application that allows the user to create notes and plans about thier upcoming trip. User's can click on any state and store any notes about that state. The user can then alter, add, or delete any prior notes they have written before."
+
   return (
     <div style={{backgroundColor: "black"}}>
       {/* <div>
@@ -95,7 +97,7 @@ function App() {
             <ProjectHolder github={"https://github.com/jshsandberg/Pantheon"} link={"https://pantheon-jjshsandberg.herokuapp.com/"} img={Pantheon} name={"Pantheon"} techs={["Javascript", "React", "MongoDB", "NodeJS"]} text={pantheonText} />
           </div>
           <div className={`fade-in-section ${onScreenRecipe ? 'is-visible' : 'is-not-visible'}`} ref={recipeRef} style={{display: "flex", justifyContent: "center"}}>
-            <ProjectHolder github={"https://github.com/jshsandberg/Recipe"} link={"https://spencer-alan.github.io/project-1/"} img={Recipe} name={"RoadTrip Planner"} techs={["Javascript"]} text={pokedexText} />
+            <ProjectHolder github={"https://github.com/jshsandberg/Recipe"} link={"https://spencer-alan.github.io/project-1/"} img={Recipe} name={"RoadTrip Planner"} techs={["Javascript"]} text={recipeText} />
           </div>
         </div>
           <div className="creativeWorkHolder1">
@@ -106,7 +108,7 @@ function App() {
               <ProjectHolder github={"https://github.com/jshsandberg/pokedex-v2"} link={"https://jshsandberg.github.io/pokedex-v2/"} img={Pokedex} name={"Galar Pokedex"} techs={["Javascript", "React"]} text={pokedexText} />
             </div>
             <div className={`fade-in-section ${onScreenRoad ? 'is-visible' : 'is-not-visible'}`} ref={roadRef} style={{display: "flex", justifyContent: "center"}}>
-              <ProjectHolder github={"https://github.com/jshsandberg/RoadTrip-Planner"} link={"https://roadtrip-planner-app.herokuapp.com/"} img={RoadMap} name={"RoadTrip Planner"} techs={["Javascript", "MySQL", "NodeJS"]} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lorem lacus. Curabitur nec ex varius, tempus tellus vitae, feugiat sapien. Mauris et blandit ex. Fusce rutrum elit in tellus eleifend, nec bibendum magna cursus. Nullam convallis metus dignissim, fringilla felis placerat, dictum turpis. Vestibulum ante ipsum. Integer ornare ipsum non ex congue faucibus."} />
+              <ProjectHolder github={"https://github.com/jshsandberg/RoadTrip-Planner"} link={"https://roadtrip-planner-app.herokuapp.com/"} img={RoadMap} name={"RoadTrip Planner"} techs={["Javascript", "MySQL", "NodeJS"]} text={roadText} />
             </div>
           </div>
       </div>
