@@ -69,7 +69,7 @@ function App() {
  
   const pokedexText = "The Galar Pokedex was my first project I completed by myself. This project was a way for me to explore more of the realm of React and hone in on my skills while still doing something that I enjoyed and felt passionate about. The Galar Pokedex use's the PokeAPI to gather data for each pokemon. The user can click on any pokemon and the API will gather data for that certain pokemon and display it in a clean, slick manor."
 
-  const recipeText = "The first application I ever created, this application allows the user to look up any dish and using a Food API, gather as much information as possible for that paticular dish. User's can also look up drinks using the BartendingAPI we have incorporated in our application. My focus was the functionality of the website and the API.";
+  const recipeText = "The first application I ever created, this application allows the user to look up any dish and using a Food API, gather as much information as possible for that paticular dish. User's can also look up drinks using the BartendingAPI we have incorporated in our application. My focus was the functionality of the website and the API. The API only allows 50 calls every 10 minutes. If you are on the website and the food images are not showing up, it is because the API is limiting the amount of calls. Please wait 5 minutes and refresh and it will work";
  
   const roadText = "An application that allows the user to create notes and plans about thier upcoming trip. User's can click on any state and store any notes about that state. The user can then alter, add, or delete any prior notes they have written before."
 
