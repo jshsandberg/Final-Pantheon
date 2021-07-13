@@ -73,6 +73,18 @@ function App() {
  
   const roadText = "An application that allows the user to create notes and plans about thier upcoming trip. User's can click on any state and store any notes about that state. The user can then alter, add, or delete any prior notes they have written before."
 
+  const shelfKeeperTerm = "Inventory Control System App";
+
+  const pantheonTerm = "Music Streaming App";
+
+  const pokedexTerm = "Passion Project";
+
+  const recipeTerm = "Cooking App";
+
+  const roadTripTerm = "Travel App";
+
+
+
   return (
     <div style={{backgroundColor: "black"}}>
       {/* <div>
@@ -94,21 +106,21 @@ function App() {
             <h4 style={{color: "rgb(91, 223, 91)", fontSize: "1.5em", display: 'flex', flexDirection: "row", alignItems: "center"}}>Explore more<img style={{width: "40px", marginTop: "8px", marginLeft: '10px'}} src={RightArrow} alt="rightArrow" /></h4>
           </div>
           <div className={`fade-in-section ${onScreenPantheon ? 'is-visible' : 'is-not-visible'}`} ref={pantheonRef} style={{display: "flex", justifyContent: "center"}}>
-            <ProjectHolder github={"https://github.com/jshsandberg/Pantheon"} link={"https://pantheon-jjshsandberg.herokuapp.com/"} img={Pantheon} name={"Pantheon"} techs={["Javascript", "React", "MongoDB", "NodeJS"]} text={pantheonText} />
+            <ProjectHolder term={pantheonTerm} github={"https://github.com/jshsandberg/Pantheon"} link={"https://pantheon-jjshsandberg.herokuapp.com/"} img={Pantheon} name={"Pantheon"} techs={["Javascript", "React", "MongoDB", "NodeJS"]} text={pantheonText} />
           </div>
           <div className={`fade-in-section ${onScreenRecipe ? 'is-visible' : 'is-not-visible'}`} ref={recipeRef} style={{display: "flex", justifyContent: "center"}}>
-            <ProjectHolder github={"https://github.com/jshsandberg/Recipe"} link={"https://spencer-alan.github.io/project-1/"} img={Recipe} name={"RoadTrip Planner"} techs={["Javascript"]} text={recipeText} />
+            <ProjectHolder term={recipeTerm} github={"https://github.com/jshsandberg/Recipe"} link={"https://spencer-alan.github.io/project-1/"} img={Recipe} name={"Recipe"} techs={["Javascript"]} text={recipeText} />
           </div>
         </div>
           <div className="creativeWorkHolder1">
             <div className={`fade-in-section ${onScreenCreativeWork ? 'is-visible' : 'is-not-visible'}`} ref={creativeWorkRef} style={{display: "flex", justifyContent: "center"}}>
-              <ProjectHolder github={"https://github.com/jshsandberg/Inventory"} link={"https://shelf-keeper-jshsandberg.herokuapp.com/"} img={Inventory} name={"Shelf Keeper"} techs={["Javascript", "MongoDB", "React", "NodeJS"]} text={shelfKeeperText} />
+              <ProjectHolder term={shelfKeeperTerm} github={"https://github.com/jshsandberg/Inventory"} link={"https://shelf-keeper-jshsandberg.herokuapp.com/"} img={Inventory} name={"Shelf Keeper"} techs={["Javascript", "MongoDB", "React", "NodeJS"]} text={shelfKeeperText} />
             </div>
             <div className={`fade-in-section ${onScreenPokemon ? 'is-visible' : 'is-not-visible'}`} ref={pokemonRef} style={{display: "flex", justifyContent: "center"}}>
-              <ProjectHolder github={"https://github.com/jshsandberg/pokedex-v2"} link={"https://jshsandberg.github.io/pokedex-v2/"} img={Pokedex} name={"Galar Pokedex"} techs={["Javascript", "React"]} text={pokedexText} />
+              <ProjectHolder term={pokedexTerm} github={"https://github.com/jshsandberg/pokedex-v2"} link={"https://jshsandberg.github.io/pokedex-v2/"} img={Pokedex} name={"Galar Pokedex"} techs={["Javascript", "React"]} text={pokedexText} />
             </div>
             <div className={`fade-in-section ${onScreenRoad ? 'is-visible' : 'is-not-visible'}`} ref={roadRef} style={{display: "flex", justifyContent: "center"}}>
-              <ProjectHolder github={"https://github.com/jshsandberg/RoadTrip-Planner"} link={"https://roadtrip-planner-app.herokuapp.com/"} img={RoadMap} name={"RoadTrip Planner"} techs={["Javascript", "MySQL", "NodeJS"]} text={roadText} />
+              <ProjectHolder term={roadTripTerm} github={"https://github.com/jshsandberg/RoadTrip-Planner"} link={"https://roadtrip-planner-app.herokuapp.com/"} img={RoadMap} name={"RoadTrip Planner"} techs={["Javascript", "MySQL", "NodeJS"]} text={roadText} />
             </div>
           </div>
       </div>

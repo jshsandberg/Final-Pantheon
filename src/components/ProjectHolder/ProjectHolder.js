@@ -5,7 +5,7 @@ import LinkIconInactive from "../../utils/test1.png";
 import LinkIconActive from "../../utils/test.png"
 import "./ProjectHolder.css";
 
-export default function ProjectHolder({github, link, img, name, techs, text}) {
+export default function ProjectHolder({github, link, img, name, techs, text, term}) {
 
     const [githubActive, setGithubActive] = useState(false);
     const [linkActive, setLinkActive] = useState(false);
@@ -19,6 +19,7 @@ export default function ProjectHolder({github, link, img, name, techs, text}) {
                 <div className="projectCardTitleHolder">
                     <div className="projectCardTitleName">
                         <h1>{name}</h1>
+                        <h2>{term}</h2>
                     </div>
                     <div className="projectCardTitleLinks">
                         <a target="_blank" href={github}><img onMouseEnter={() => setGithubActive(true)} onMouseLeave={() => setGithubActive(false)} className="githubIconImage" src={githubActive ? GithubIconActive : GithubIconInactive} alt="githubIcon" /></a>
