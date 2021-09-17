@@ -1,0 +1,165 @@
+.timeLineGCU {
+    width: 25%;
+    background-color: #0084ff;
+    height: 1.5em;
+    border-radius: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.timeLineInfo {
+    position: absolute;
+    top: -6em;
+    left: .6em;
+    border-left: 1px solid white;
+    height: 6em;
+    z-index: -1;
+    transition: all .4s ease-in-out;
+}
+
+.timeLineInfo:hover {
+    height: 10em;
+    top: -10em
+}
+
+.timeLineInfo > * {
+    color: white;
+    position: absolute;
+    margin: 0 0 0 .5vw;
+    top: -1em;
+    width: 10vw;
+}
+
+.timeLineWords > * {
+    margin: 0;
+}
+
+.timeLineInfoUnder {
+    position: absolute;
+    top: 1.5em;
+    left: .6em;
+    border-left: 1px solid white;
+    height: 6em;
+    z-index: -1;
+    transition: all .4s ease-in-out;
+
+}
+
+.timeLineInfoUnder:hover {
+    height: 10em;
+}
+
+.timeLineInfoUnder > * {
+    color: white;
+    position: absolute;
+    margin: 0 0 0 .5vw;
+    top: 3em;
+    width: 10vw;
+    transition: all .4s ease-in-out;
+
+}
+
+.timeLineInfoUnder:hover > * {
+    top: 7em
+}
+
+.timeLineWordsUnder > * {
+    margin: 0;
+}
+
+
+
+
+.timeLineGym {
+    width: 120%;
+    background-color: #e92c2c;
+    height: 1.5em;
+    border-radius: 15px;
+    position: absolute;
+    top: -2em;
+    right: -31em;
+}
+
+.timeLineGCUWeb {
+    width: 60%;
+    background-color: #f98600;
+    height: 1.5em;
+    border-radius: 15px;
+    position: absolute;
+    top: 2em;
+    right: 0em;
+}
+
+.timeLineUCI {
+    width: 25%;
+    background-color: #0084ff;
+    height: 1.5em;
+    border-radius: 15px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.timeLineFreeLance {
+    width: 80%;
+    background-color: #9a28e6;
+    height: 1.5em;
+    border-radius: 15px;
+    position: absolute;
+    top: 2em;
+    left: 5px;
+}
+
+.timeLineInterlude {
+    width: 100%;
+    background-color: #ffdf00;
+    height: 1.5em;
+    border-radius: 15px;
+    position: absolute;
+    top: 2em;
+    left: 20em;
+}
+
+.timeLineTraining {
+    width: 100%;
+    background-color:  #00c5c5;
+    height: 1.5em;
+    border-radius: 15px;
+    position: absolute;
+    top: -2em;
+    left: 10em;
+}
+
+.timeLineHolderFirst {
+    width: 20%;
+    height: 1.5em;
+    border-radius: 15px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.timeLineHolderSecond {
+    width: 20%;
+    height: 1.5em;
+    border-radius: 15px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.my-node-enter {
+    opacity: 0;
+  }
+  .my-node-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  .my-node-exit {
+    opacity: 1;
+  }
+  .my-node-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+

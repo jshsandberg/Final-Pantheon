@@ -11,6 +11,7 @@ import Pokedex from "./utils/Pokedex4.png";
 import Recipe from "./utils/Recipe1.png";
 import Pantheon from "./utils/pantheon.png";
 import "./App.css";
+import TimeLine from "./components/TimeLine/TimeLine";
 
 function useOnScreen(ref, rootMargin = "0px") {
   const [isIntersecting, setIntersecting] = useState(false);
@@ -98,7 +99,10 @@ function App() {
             <AboutMe />
           </div>
       </div>
-      <div style={{marginTop: "20vh", display: "flex", flexDirection: "row", justifyContent: "center", gap: "5vw"}}>
+      <div style={{marginLeft: "5vw", marginRight: "5vw", marginTop: "40vh"}}>
+        <TimeLine />
+      </div>
+      <div style={{marginTop: "40vh", display: "flex", flexDirection: "row", justifyContent: "center", gap: "5vw"}}>
         <div className="creativeWorkHolder1">
           <div className={`fade-in-section ${onScreenCreativeWork ? 'is-visible' : 'is-not-visible'}`} ref={creativeWorkRef}>
             <h2>All Creative Work.</h2>
