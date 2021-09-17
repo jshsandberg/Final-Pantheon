@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import NavBar from "./components/NavBar/NavBar";
+// import NavBar from "./components/NavBar/NavBar";
 import Welcome from "./components/Welcome/Welcome";
 import AboutMe from "./components/AboutMe/AboutMe";
 import ProjectHolder from "./components/ProjectHolder/ProjectHolder";

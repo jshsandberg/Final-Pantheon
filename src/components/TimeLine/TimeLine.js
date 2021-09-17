@@ -123,8 +123,8 @@ const TimeLine = () => {
                                     exit: 500,
                                    }}
                                 classNames="interlude"
-                                // mountOnEnter
-                                // unmountOnExit
+                                mountOnEnter
+                                unmountOnExit
                                 appear={true}
                             >
                                 <p style={{marginTop: "-20vh"}}>Studied here for a long time</p>

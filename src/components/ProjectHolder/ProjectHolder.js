@@ -22,8 +22,8 @@ export default function ProjectHolder({github, link, img, name, techs, text, ter
                         <h2>{term}</h2>
                     </div>
                     <div className="projectCardTitleLinks">
-                        <a target="_blank" href={github}><img onMouseEnter={() => setGithubActive(true)} onMouseLeave={() => setGithubActive(false)} className="githubIconImage" src={githubActive ? GithubIconActive : GithubIconInactive} alt="githubIcon" /></a>
-                        <a target="_blank" href={link}><img onMouseEnter={() => setLinkActive(true)} onMouseLeave={() => setLinkActive(false)} className="linkIconImage" src={linkActive ? LinkIconActive : LinkIconInactive} alt="linkIcon" /></a>
+                        <a rel="noreferrer" target="_blank" href={github}><img onMouseEnter={() => setGithubActive(true)} onMouseLeave={() => setGithubActive(false)} className="githubIconImage" src={githubActive ? GithubIconActive : GithubIconInactive} alt="githubIcon" /></a>
+                        <a rel="noreferrer" target="_blank" href={link}><img onMouseEnter={() => setLinkActive(true)} onMouseLeave={() => setLinkActive(false)} className="linkIconImage" src={linkActive ? LinkIconActive : LinkIconInactive} alt="linkIcon" /></a>
                     </div>
                 </div>
                 <div className="projectCardTitleTechsHolder">
