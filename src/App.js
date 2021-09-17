@@ -40,6 +40,10 @@ function App() {
 
   const onScreenBio = useOnScreen(bioRef, "-200px");
 
+  const timeLineRef = useRef();
+
+  const onScreenTimeLine = useOnScreen(timeLineRef, "-200px");
+
   const creativeWorkRef = useRef();
 
   const onScreenCreativeWork = useOnScreen(creativeWorkRef, "-200px")
@@ -99,7 +103,7 @@ function App() {
             <AboutMe />
           </div>
       </div>
-      <div style={{marginLeft: "5vw", marginRight: "5vw", marginTop: "40vh"}}>
+      <div className={`fade-in-section ${onScreenTimeLine ? 'is-visible' : 'is-not-visible'}`} ref={timeLineRef} style={{marginLeft: "5vw", marginRight: "5vw", marginTop: "30vh"}}>
         <TimeLine />
       </div>
       <div style={{marginTop: "40vh", display: "flex", flexDirection: "row", justifyContent: "center", gap: "5vw"}}>

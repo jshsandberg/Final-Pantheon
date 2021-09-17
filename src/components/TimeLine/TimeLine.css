@@ -15,6 +15,7 @@
     height: 6em;
     z-index: -1;
     transition: all .4s ease-in-out;
+    width: 10vw
 }
 
 .timeLineInfo:hover {
@@ -42,6 +43,7 @@
     height: 6em;
     z-index: -1;
     transition: all .4s ease-in-out;
+    width: 10vw
 
 }
 
@@ -148,17 +150,114 @@
 
 }
 
-.my-node-enter {
+.gcu-enter {
     opacity: 0;
   }
-  .my-node-enter-active {
+  .gcu-enter-active {
     opacity: 1;
+    transition: opacity 2000ms;
+  }
+  .gcu-exit {
+    opacity: 1;
+
+  }
+  .gcu-exit-active {
+    opacity: 0;
     transition: opacity 200ms;
   }
-  .my-node-exit {
-    opacity: 1;
+
+  .gym-enter {
+    opacity: 0;
   }
-  .my-node-exit-active {
+  .gym-enter-active {
+    opacity: 1;
+    transition: opacity 2000ms;
+  }
+  .gym-exit {
+    opacity: 1;
+
+  }
+  .gym-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+
+  .free-enter {
+    opacity: 0;
+  }
+  .free-enter-active {
+    opacity: 1;
+    transition: opacity 2000ms;
+  }
+  .free-exit {
+    opacity: 1;
+
+  }
+  .free-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+
+  .web-enter {
+    opacity: 0;
+  }
+  .web-enter-active {
+    opacity: 1;
+    transition: opacity 2000ms;
+  }
+  .web-exit {
+    opacity: 1;
+
+  }
+  .web-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+
+  .uc-enter {
+    opacity: 0;
+  }
+  .uc-enter-active {
+    opacity: 1;
+    transition: opacity 2000ms;
+  }
+  .uc-exit {
+    opacity: 1;
+
+  }
+  .uc-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+
+  .training-enter {
+    opacity: 0;
+  }
+  .training-enter-active {
+    opacity: 1;
+    transition: opacity 2000ms;
+  }
+  .training-exit {
+    opacity: 1;
+
+  }
+  .training-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+
+  .interlude-enter {
+    opacity: 0;
+  }
+  .interlude-enter-active {
+    opacity: 1;
+    transition: opacity 2000ms;
+  }
+  .interlude-exit {
+    opacity: 1;
+
+  }
+  .interlude-exit-active {
     opacity: 0;
     transition: opacity 200ms;
   }
